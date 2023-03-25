@@ -57,8 +57,8 @@ $db = new PDO('mysql:host=localhost;dbname=u54369', $user, $pass, [PDO::ATTR_PER
 
 // Подготовленный запрос. Не именованные метки.
 try {
-  $stmt = $db->prepare("INSERT INTO application SET name = ?, email = ?, year = ?, sex = ?, limbs = ?, biography = ?");
-  $stmt -> execute([$_POST['fio'], $_POST['email'], $_POST['year'], $_POST['sex'],$_POST['limbs'], $_POST['biography']]);
+  $stmt = $db->prepare("INSERT INTO application SET name = ?, email = ?, year = ?, gender = ?, limbs = ?, biography = ?");
+  $stmt -> execute([$_POST['fio'], $_POST['email'], $_POST['year'], $_POST['gender'],$_POST['limbs'], $_POST['biography']]);
   $application_id = $db->lastInsertId();
   
   $application_ability = $db->prepare("INSERT INTO application_ability SET aplication_id = ?, ability_id = ?");
