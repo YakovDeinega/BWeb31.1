@@ -20,11 +20,11 @@
   </div>
   
   <div class = "limbs"><label>Количество конечностей?</label>
-  <label>4 limbs</label>
+  <label>4 рук</label>
   <input type="radio" checked="checked" name="limbs" value="4" />
-  <label>8 limbs</label>
+  <label>8 ног</label>
   <input type="radio" name="limbs" value="8" />   
-  <label>16 limbs</label>       
+  <label>16 голов</label>       
   <input type="radio" name="limbs" value="16" /> 
   </div>
 
